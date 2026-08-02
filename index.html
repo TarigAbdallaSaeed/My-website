@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الباشمهندس طارق عبدالله سعيد | موقع الأعمال والسيرة الذاتية</title>
+    <meta name="description" content="الموقع الرسمي للباشمهندس طارق عبدالله سعيد - خريج علوم حاسوب مرتبة الشرف جامعة دنقلا. أخصائي تقنية معلومات، مطور ويب، ومحلل بيانات.">
+    <meta name="keywords" content="طارق عبدالله سعيد, علوم حاسوب, جامعة دنقلا, مطور ويب, أخصائي تقنية معلومات, تحليل بيانات, SPSS, السودان, دنقلا">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="glow-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-brand">
+                <div class="brand-avatar">
+                    <img src="assets/profile.jpg" alt="طارق عبدالله سعيد">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name" data-i18n="brand_name">م. طارق عبدالله سعيد</span>
+                    <span class="brand-sub" data-i18n="brand_sub">علوم حاسوب | جامعة دنقلا</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-i18n="nav_home">الرئيسية</a>
+                <a href="#about" class="nav-link" data-i18n="nav_about">عني</a>
+                <a href="#experience" class="nav-link" data-i18n="nav_experience">الخبرات</a>
+                <a href="#skills" class="nav-link" data-i18n="nav_skills">المهارات</a>
+                <a href="#services" class="nav-link" data-i18n="nav_services">الخدمات</a>
+                <a href="#certifications" class="nav-link" data-i18n="nav_certifications">الشهادات</a>
+                <a href="#estimator" class="nav-link" data-i18n="nav_estimator">حاسبة الخدمات</a>
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل معي</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn theme-toggle" id="themeToggle" title="تغيير الثيم" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="langText">English</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge pulse">
+                        <span class="pulse-dot"></span>
+                        <span data-i18n="hero_status">متاح للعمل والانضمام للمشاريع والخدمات الاستشارية</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="greeting" data-i18n="hero_greeting">مرحباً بكم، أنا</span>
+                        <span class="gradient-text" data-i18n="hero_name">الباشمهندس طارق عبدالله سعيد آدم</span>
+                    </h1>
+
+                    <div class="typing-container">
+                        <span class="static-prefix" data-i18n="hero_prefix">متخصص في: </span>
+                        <span class="dynamic-typing" id="dynamicTyping"></span>
+                    </div>
+
+                    <p class="hero-description" data-i18n="hero_desc">
+                        خريج علوم حاسوب (مرتبة الشرف) من جامعة دنقلا. صاحب خبرة متكاملة في الدعم الفني، إدارة المعامل البرمجية، تطوير المواقع وقواعد البيانات، الدعم المالي والإداري، وتحليل البيانات الإحصائية وتقارير SPSS.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://wa.me/249124966030?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A8%D8%A7%D9%84%D8%A8%D8%A7%D8%B4%D9%85%D9%87%D9%86%D8%AF%D8%B3%20%D8%B7%D8%A7%D8%B1%D9%82%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%AC%D8%AF%D9%8A%D8%AF" target="_blank" class="btn btn-primary">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span data-i18n="btn_whatsapp">تواصل عبر الواتساب</span>
+                        </a>
+                        <button class="btn btn-outline" id="downloadCvBtn">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span data-i18n="btn_download_cv">عرض وتنزيل السيرة الذاتية</span>
+                        </button>
+                    </div>
+
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-graduation-cap highlight-icon"></i>
+                            <div>
+                                <h4 data-i18n="h1_val">جامعة دنقلا</h4>
+                                <p data-i18n="h1_lbl">بكالوريوس علوم الحاسوب (مرتبة الشرف)</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-hand-holding-dollar highlight-icon"></i>
+                            <div>
+                                <h4 data-i18n="h2_val">+3,000,000 ج.س</h4>
+                                <p data-i18n="h2_lbl">حصيلة تمويل وتبرعات كاهاتين</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-microchip highlight-icon"></i>
+                            <div>
+                                <h4 data-i18n="h3_val">إدارة المعامل</h4>
+                                <p data-i18n="h3_lbl">دعم وصيانة أجهزة الكلية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-media">
+                    <div class="media-card-wrapper">
+                        <div class="profile-card">
+                            <div class="card-glass"></div>
+                            <img src="assets/profile.jpg" alt="الباشمهندس طارق عبدالله سعيد" class="hero-img">
+                            <div class="badge-floating badge-top">
+                                <i class="fa-solid fa-award"></i>
+                                <div>
+                                    <strong data-i18n="badge_honours">مرتبة الشرف</strong>
+                                    <span data-i18n="badge_honours_sub">دفعة 2025</span>
+                                </div>
+                            </div>
+                            <div class="badge-floating badge-bottom">
+                                <i class="fa-solid fa-code-compare"></i>
+                                <div>
+                                    <strong data-i18n="badge_skills">تطوير ودعم تقني</strong>
+                                    <span data-i18n="badge_skills_sub">IT & Software</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-title" data-i18n="about_subtitle">تعرّف عليّ</span>
+                    <h2 class="section-title" data-i18n="about_title">الملف الشخصي والمهني</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-panel">
+                        <h3 class="card-title">
+                            <i class="fa-solid fa-user-gear"></i>
+                            <span data-i18n="about_summary_head">نبذة عن المهندس طارق</span>
+                        </h3>
+                        <p data-i18n="about_p1">
+                            خريج طموح ومتميز من كلية علوم الحاسوب والتنمية البشرية بجامعة دنقلا بدرجة البكالوريوس مع مرتبة الشرف. أمتلك خبرة عملية متنوعة تجمع بين الصيانة الفنية ومعامل الحاسوب، إدارة المكاتب والعمليات المالية، تحليل البيانات الإحصائية والبرمجة.
+                        </p>
+                        <p data-i18n="about_p2">
+                            أتطلع دائماً لتحقيق التميز في بيئات العمل التقنية والإدارية، وتطبيق مهاراتي في حل المشكلات، تحسين كفاءة الأنظمة، ودعم الفرق التنفيذية والأكاديمية بكل شغف ومسؤولية.
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <span class="info-label" data-i18n="lbl_email">البريد الإلكتروني</span>
+                                    <span class="info-val">tarigabdallasaeed@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <span class="info-label" data-i18n="lbl_phone">الهاتف / الواتساب</span>
+                                    <span class="info-val" dir="ltr">+249 124 966 030</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <span class="info-label" data-i18n="lbl_location">الموقع الحالي</span>
+                                    <span class="info-val" data-i18n="val_location">دنقلا، الولاية الشمالية، السودان</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-user-graduate"></i>
+                                <div>
+                                    <span class="info-label" data-i18n="lbl_edu">المؤهل الأكاديمي</span>
+                                    <span class="info-val" data-i18n="val_edu">بكالوريوس علوم الحاسوب (مرتبة الشرف)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card glass-panel">
+                        <h3 class="card-title">
+                            <i class="fa-solid fa-brain"></i>
+                            <span data-i18n="personal_skills_title">المهارات الشخصية والقيادية</span>
+                        </h3>
+                        <div class="personal-skills-grid">
+                            <div class="p-skill-card">
+                                <i class="fa-solid fa-users-gear"></i>
+                                <h4 data-i18n="ps_leadership">القيادة وإدارة الفرق</h4>
+                                <p data-i18n="ps_leadership_desc">توجيه العمليات وتنسيق الجهود لتحقيق الأهداف الجماعية.</p>
+                            </div>
+                            <div class="p-skill-card">
+                                <i class="fa-solid fa-comments"></i>
+                                <h4 data-i18n="ps_communication">التواصل والتفاعل الاجتماعي</h4>
+                                <p data-i18n="ps_communication_desc">تواصل فعال ونقل المعلومات بوضوح مع كافة المستويات.</p>
+                            </div>
+                            <div class="p-skill-card">
+                                <i class="fa-solid fa-puzzle-piece"></i>
+                                <h4 data-i18n="ps_problem">حل المشكلات البرمجية والتطبيقية</h4>
+                                <p data-i18n="ps_problem_desc">تحليل الأخطاء التقنية وإيجاد حلول سريعة ومستدامة.</p>
+                            </div>
+                            <div class="p-skill-card">
+                                <i class="fa-solid fa-clock"></i>
+                                <h4 data-i18n="ps_time">إدارة الوقت والتكيف</h4>
+                                <p data-i18n="ps_time_desc">العمل تحت الضغط والالتزام بالمواعيد النهائية بدقة عالية.</p>
+                            </div>
+                        </div>
+
+                        <div class="languages-box">
+                            <h4 class="box-subtitle"><i class="fa-solid fa-language"></i> <span data-i18n="lang_title">اللغات</span></h4>
+                            <div class="lang-bars">
+                                <div class="lang-bar-item">
+                                    <div class="lang-info">
+                                        <span data-i18n="lang_ar">العربية (اللغة الأم)</span>
+                                        <span>100%</span>
+                                    </div>
+                                    <div class="bar-outer"><div class="bar-inner" style="width: 100%;"></div></div>
+                                </div>
+                                <div class="lang-bar-item">
+                                    <div class="lang-info">
+                                        <span data-i18n="lang_en">الإنجليزية (مستوى متوسط)</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="bar-outer"><div class="bar-inner" style="width: 70%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="section exp-section" id="experience">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-title" data-i18n="exp_subtitle">مسيرتي العملية</span>
+                    <h2 class="section-title" data-i18n="exp_title">الخبرات المهنية والتطوعية</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Exp Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role" data-i18n="exp1_role">فني معامل حاسوب (Laboratory Technician)</h3>
+                                    <h4 class="exp-company" data-i18n="exp1_company">كلية علوم الحاسوب والتنمية البشرية - جامعة دنقلا</h4>
+                                </div>
+                                <span class="exp-date badge-pill" data-i18n="exp1_date">2025 – 2026</span>
+                            </div>
+                            <ul class="exp-bullets">
+                                <li data-i18n="exp1_b1">تقديم الدعم الفني المباشر لمعامل الحواسيب وضمان جاهزيتها المستمرة للجلسات العملية.</li>
+                                <li data-i18n="exp1_b2">تركيب وصيانة المكونات المادية (Hardware) والأنظمة والبرمجيات (Software).</li>
+                                <li data-i18n="exp1_b3">مساعدة المحاضرين والطلاب أثناء المحاضرات العملية والتطبيقات البرمجية.</li>
+                                <li data-i18n="exp1_b4">تشخيص واستكشاف الأعطال البرمجية والشبكية وحلها بكفاءة وسرعة.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Exp Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="exp-header">
+                                <div>
+                                    <h3 class="exp-role" data-i18n="exp2_role">سكرتير المكتب المالي (Finance Office Secretary)</h3>
+                                    <h4 class="exp-company" data-i18n="exp2_company">منظمة كاهاتين الطوعية (Kahateen Voluntary Organization)</h4>
+                                </div>
+                                <span class="exp-date badge-pill" data-i18n="exp2_date">2021 – 2023</span>
+                            </div>
+                            <ul class="exp-bullets">
+                                <li data-i18n="exp2_b1">إدارة الأرشيف والتسجيل والسجلات المالية والإدارية بمهنية ودقة تامة.</li>
+                                <li data-i18n="exp2_b2">إعداد وتقييم التقارير الدورية باستخدام حزمة Microsoft Office.</li>
+                                <li data-i18n="exp2_b3">تقديم الدعم المباشر للمستفيدين وتنسيق العمليات اليومية للمكتب المالي.</li>
+                                <li data-i18n="exp2_b4">المساهمة البارزة في جمع تبرعات وحملات تمويل تجاوزت 3,000,000 جنيه سوداني.</li>
+                                <li data-i18n="exp2_b5">الالتزام الكامل بالسرية والدقة الشديدة في المعاملات المالية والمستندية.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-title" data-i18n="skills_subtitle">التأهيل التقني</span>
+                    <h2 class="section-title" data-i18n="skills_title">المهارات التقنية والبرمجية</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <!-- Technical Skill Progress Bars -->
+                    <div class="skills-column glass-panel">
+                        <h3 class="column-title"><i class="fa-solid fa-code"></i> <span data-i18n="tech_skills_head">المهارات البرمجية وتطوير الويب</span></h3>
+                        
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span><i class="fa-brands fa-html5 text-orange"></i> HTML5 & CSS3</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="bar-outer"><div class="bar-inner" style="width: 90%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span><i class="fa-brands fa-js text-yellow"></i> JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="bar-outer"><div class="bar-inner" style="width: 80%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span><i class="fa-brands fa-php text-purple"></i> PHP</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bar-outer"><div class="bar-inner" style="width: 75%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span><i class="fa-solid fa-windows text-blue"></i> Visual Basic .NET</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="bar-outer"><div class="bar-inner" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Analytics -->
+                    <div class="skills-column glass-panel">
+                        <h3 class="column-title"><i class="fa-solid fa-database"></i> <span data-i18n="data_skills_head">قواعد البيانات وتحليل البيانات</span></h3>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span><i class="fa-solid fa-server text-cyan"></i> MySQL Database</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="bar-outer"><div class="bar-inner" style="width: 85%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span><i class="fa-solid fa-chart-pie text-emerald"></i> SPSS Statistics</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="bar-outer"><div class="bar-inner" style="width: 80%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span><i class="fa-solid fa-file-excel text-green"></i> Microsoft Excel (Advanced Data Analysis)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="bar-outer"><div class="bar-inner" style="width: 90%;"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <span><i class="fa-solid fa-database text-red"></i> Microsoft Access</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="bar-outer"><div class="bar-inner" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Competencies Grid -->
+                <div class="tools-badges-container">
+                    <h3 class="center-subtitle" data-i18n="tools_head">الأدوات والكفايات الأساسية (Core Competencies)</h3>
+                    <div class="badge-grid">
+                        <div class="tool-chip"><i class="fa-solid fa-desktop"></i> IT Support</div>
+                        <div class="tool-chip"><i class="fa-solid fa-code"></i> Web Development</div>
+                        <div class="tool-chip"><i class="fa-solid fa-database"></i> Database Development</div>
+                        <div class="tool-chip"><i class="fa-solid fa-chart-line"></i> Data Analysis</div>
+                        <div class="tool-chip"><i class="fa-brands fa-microsoft"></i> Microsoft Office Suite</div>
+                        <div class="tool-chip"><i class="fa-solid fa-diagram-project"></i> Project Administration</div>
+                        <div class="tool-chip"><i class="fa-solid fa-headset"></i> Customer Service</div>
+                        <div class="tool-chip"><i class="fa-solid fa-file-lines"></i> Report Writing</div>
+                        <div class="tool-chip"><i class="fa-solid fa-chalkboard-user"></i> Training & Lab Support</div>
+                        <div class="tool-chip"><i class="fa-brands fa-github"></i> GitHub</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Offered -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-title" data-i18n="services_subtitle">ماذا أقدم؟</span>
+                    <h2 class="section-title" data-i18n="services_title">الخدمات المهنية والتقنية</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3 data-i18n="srv1_title">الدعم الفني وتقنية المعلومات</h3>
+                        <p data-i18n="srv1_desc">تركيب وصيانة العتاد والبرمجيات، تشخيص الأعطال، تجهيز وإدارة معامل الحواسيب للمؤسسات والمراكز التعليمية.</p>
+                        <a href="https://wa.me/249124966030?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B9%D9%85%20%D8%A7%D9%84%D9%81%D9%86%D9%8A%20%D9%88%D8%AA%D9%82%D9%8BD8%A9%20%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA" target="_blank" class="service-link">
+                            <span data-i18n="srv_request">طلب الخدمة</span> <i class="fa-solid fa-arrow-left arrow-icon"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h3 data-i18n="srv2_title">تطوير المواقع وقواعد البيانات</h3>
+                        <p data-i18n="srv2_desc">تصميم وبناء مواقع ويب متجاوبة وجذابة باستخدام HTML, CSS, JS, PHP وتصميم قواعد بيانات متكاملة باستخدام MySQL و MS Access.</p>
+                        <a href="https://wa.me/249124966030?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%85%D9%88%D9%82%D8%B9%20%D8%A3%D9%88%20%D9%82%D8%A7%D8%B9%D8%AF%D8%A9%20%D8%A8%D9%8A%D8%A7%D9%8BD8%A7%D8%AA" target="_blank" class="service-link">
+                            <span data-i18n="srv_request">طلب الخدمة</span> <i class="fa-solid fa-arrow-left arrow-icon"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3 data-i18n="srv3_title">تحليل البيانات وإعداد التقارير</h3>
+                        <p data-i18n="srv3_desc">معالجة البيانات الإحصائية والمالية باستخدام SPSS و Excel وإعداد تقارير شاملة تساند في اتخاذ القرارات الاستراتيجية.</p>
+                        <a href="https://wa.me/249124966030?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%AA%D8%AD%D9%84%D9%8A%D9%84%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%8BD8%A7%D8%AA%20%D9%88%D8%A5%D8%B9%D8%AF%D8%A7%D8%AF%20%D8%A7%D9%84%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1" target="_blank" class="service-link">
+                            <span data-i18n="srv_request">طلب الخدمة</span> <i class="fa-solid fa-arrow-left arrow-icon"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fa-solid fa-folder-tree"></i></div>
+                        <h3 data-i18n="srv4_title">الدعم الإداري وإدارة المشاريع</h3>
+                        <p data-i18n="srv4_desc">إدارة السجلات المالية والأرشيف، إعداد المستندات والتقارير الإدارية، وتنسيق العمليات الميدانية والدعم اللوجستي للمؤسسات.</p>
+                        <a href="https://wa.me/249124966030?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B9%D9%85%20%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D8%B1%D9%8A%20%D9%88%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9" target="_blank" class="service-link">
+                            <span data-i18n="srv_request">طلب الخدمة</span> <i class="fa-solid fa-arrow-left arrow-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="section cert-section" id="certifications">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-title" data-i18n="cert_subtitle">التدريب والاعتمادات</span>
+                    <h2 class="section-title" data-i18n="cert_title">الشهادات والدورات التدريبية</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="cert-grid">
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon"><i class="fa-solid fa-certificate text-gold"></i></div>
+                        <h4 data-i18n="cert1_name">شهادة خبرة – فني معامل حاسوب</h4>
+                        <p data-i18n="cert1_issuer">جامعة دنقلا - كلية علوم الحاسوب والتنمية البشرية</p>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon"><i class="fa-solid fa-certificate text-gold"></i></div>
+                        <h4 data-i18n="cert2_name">شهادة خبرة – سكرتير المكتب المالي</h4>
+                        <p data-i18n="cert2_issuer">منظمة كاهاتين الطوعية</p>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon"><i class="fa-solid fa-chalkboard-user text-cyan"></i></div>
+                        <h4 data-i18n="cert3_name">تدريب المدربين (TOT - Training of Trainers)</h4>
+                        <p data-i18n="cert3_issuer">تأهيل وااحتراف المهارات التدريبية</p>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon"><i class="fa-solid fa-lightbulb text-yellow"></i></div>
+                        <h4 data-i18n="cert4_name">ريادة الأعمال الاجتماعية (Social Entrepreneurship)</h4>
+                        <p data-i18n="cert4_issuer">بناء المشاريع المستدامة ذات الأثر المجتمعي</p>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon"><i class="fa-solid fa-star text-purple"></i></div>
+                        <h4 data-i18n="cert5_name">الإبداع والتميز (Creativity & Excellence)</h4>
+                        <p data-i18n="cert5_issuer">التفكير الابتكاري وتطوير الأداء المالي والمهني</p>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon"><i class="fa-solid fa-comments text-emerald"></i></div>
+                        <h4 data-i18n="cert6_name">مهارات التواصل الاجتماعي (Social Communication Skills)</h4>
+                        <p data-i18n="cert6_issuer">التواصل الفعال وإدارة العلاقات والإقناع</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Service Estimator Calculator Section -->
+        <section class="section estimator-section" id="estimator">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-title" data-i18n="est_subtitle">أداة تفاعلية</span>
+                    <h2 class="section-title" data-i18n="est_title">حاسبة تقدير الخدمات وتجهيز الطلب</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="estimator-box glass-panel">
+                    <p class="est-intro" data-i18n="est_intro">حدد الخدمات التقنية والإدارية المطلوبة للحصول على تقدير فوري ومباشر لنطاق العمل وإرساله مباشرة إلى المهندس طارق عبر الواتساب:</p>
+                    
+                    <div class="estimator-options">
+                        <label class="est-checkbox">
+                            <input type="checkbox" value="تطوير موقع ويب متجاوب" data-price="Web Dev" class="est-check">
+                            <span class="custom-check"><i class="fa-solid fa-check"></i></span>
+                            <span class="option-text">
+                                <strong data-i18n="opt1_title">تطوير موقع ويب (Web Development)</strong>
+                                <small data-i18n="opt1_desc">تصميم موقع حديث مع لوحة تحكم وقواعد بيانات</small>
+                            </span>
+                        </label>
+
+                        <label class="est-checkbox">
+                            <input type="checkbox" value="تحليل بيانات ودراسة إحصائية SPSS" data-price="SPSS" class="est-check">
+                            <span class="custom-check"><i class="fa-solid fa-check"></i></span>
+                            <span class="option-text">
+                                <strong data-i18n="opt2_title">تحليل بيانات SPSS و Excel</strong>
+                                <small data-i18n="opt2_desc">تفريع الاستبيانات والتحليل الإحصائي وتوليد الجداول</small>
+                            </span>
+                        </label>
+
+                        <label class="est-checkbox">
+                            <input type="checkbox" value="تجهيز ودعم فني لمعمل حواسيب" data-price="IT Support" class="est-check">
+                            <span class="custom-check"><i class="fa-solid fa-check"></i></span>
+                            <span class="option-text">
+                                <strong data-i18n="opt3_title">صيانة ودعم فني IT & Labs</strong>
+                                <small data-i18n="opt3_desc">تجهيز المعامل والتثبيت والصيانة الوقائية والشبكية</small>
+                            </span>
+                        </label>
+
+                        <label class="est-checkbox">
+                            <input type="checkbox" value="إعداد السجلات والتقارير المالية والإدارية" data-price="Admin Support" class="est-check">
+                            <span class="custom-check"><i class="fa-solid fa-check"></i></span>
+                            <span class="option-text">
+                                <strong data-i18n="opt4_title">الدعم الإداري والأرشيف المالي</strong>
+                                <small data-i18n="opt4_desc">أرشفة المستندات وإعداد تقارير Microsoft Office</small>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="est-summary">
+                        <div class="summary-details">
+                            <span data-i18n="est_selected_count">الخدمات المختارة: </span>
+                            <strong id="selectedCount">0 خدمات</strong>
+                        </div>
+                        <button class="btn btn-primary" id="sendEstimateWhatsappBtn" disabled>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span data-i18n="btn_send_estimate">إرسال تفاصيل الطلب عبر الواتساب</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-title" data-i18n="contact_subtitle">يسعدني تواصلكم</span>
+                    <h2 class="section-title" data-i18n="contact_title">معلومات التواصل والاستفسارات</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-cards">
+                        <div class="contact-card glass-panel">
+                            <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <h4 data-i18n="c_wa_head">واتساب / هاتف</h4>
+                                <a href="https://wa.me/249124966030" target="_blank" dir="ltr" class="c-link">+249 124 966 030</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-panel">
+                            <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4 data-i18n="c_email_head">البريد الإلكتروني</h4>
+                                <a href="mailto:tarigabdallasaeed@gmail.com" class="c-link">tarigabdallasaeed@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-panel">
+                            <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4 data-i18n="c_loc_head">الموقع الجغرافي</h4>
+                                <p data-i18n="c_loc_val">دنقلا، الولاية الشمالية، السودان</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-panel">
+                            <div class="c-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div>
+                                <h4 data-i18n="c_univ_head">الجامعة والكلية</h4>
+                                <p data-i18n="c_univ_val">جامعة دنقلا - كلية علوم الحاسوب والتنمية البشرية</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass-panel">
+                        <h3 class="form-title" data-i18n="form_title">أرسل رسالة مباشرة</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="senderName" data-i18n="form_name">الاسم الكامل</label>
+                                <input type="text" id="senderName" class="form-control" placeholder="أدخل اسمك الكريم" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="senderEmail" data-i18n="form_email">البريد الإلكتروني / رقم الهاتف</label>
+                                <input type="text" id="senderEmail" class="form-control" placeholder="example@gmail.com / 0123456789" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="msgSubject" data-i18n="form_subject">موضوع الرسالة</label>
+                                <input type="text" id="msgSubject" class="form-control" placeholder="مثل: استشارة تقنية، طلب مشروع، وظيفة..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="msgContent" data-i18n="form_msg">نص الرسالة</label>
+                                <textarea id="msgContent" rows="4" class="form-control" placeholder="اكتب التفاصيل هنا..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span data-i18n="form_submit">إرسال الرسالة</span>
+                            </button>
+                        </form>
+                        <div id="formFeedback" class="form-feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>الباشمهندس طارق عبدالله سعيد آدم</h3>
+                <p data-i18n="footer_tagline">خريج علوم حاسوب (مرتبة الشرف) - جامعة دنقلا | أخصائي IT ومطور ويب ومحلل بيانات</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home" data-i18n="nav_home">الرئيسية</a>
+                <a href="#about" data-i18n="nav_about">عني</a>
+                <a href="#experience" data-i18n="nav_experience">الخبرات</a>
+                <a href="#skills" data-i18n="nav_skills">المهارات</a>
+                <a href="#contact" data-i18n="nav_contact">تواصل معي</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; <span id="currentYear"></span> الباشمهندس طارق عبدالله سعيد. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/249124966030" target="_blank" class="floating-whatsapp" title="تواصل مباشر عبر الواتساب" aria-label="WhatsApp Direct">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Resume Modal -->
+    <div class="modal-overlay" id="cvModal">
+        <div class="modal-box glass-panel">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-file-invoice"></i> <span data-i18n="modal_cv_title">السيرة الذاتية - م. طارق عبدالله سعيد</span></h3>
+                <button class="modal-close" id="closeCvModal">&times;</button>
+            </div>
+            <div class="modal-body cv-printable-content" id="cvPrintContent">
+                <div class="cv-header">
+                    <h2>TARIG ABDALLA SAEED ADAM</h2>
+                    <p class="cv-sub">IT Specialist | Web Developer | Data Analyst | Administrative & Project Support Officer</p>
+                    <p class="cv-contact-line">Dongola, Sudan | +249124966030 | tarigabdallasaeed@gmail.com</p>
+                </div>
+                <hr>
+                <div class="cv-section">
+                    <h3>PROFESSIONAL PROFILE</h3>
+                    <p>Highly motivated Computer Science graduate with honours from the University of Dongola. Experienced in IT support, laboratory support, web development, administration, finance support, data analysis, report writing, customer service and project coordination.</p>
+                </div>
+                <div class="cv-section">
+                    <h3>CORE COMPETENCIES</h3>
+                    <p>• IT Support • Web Development • Database Development • Data Analysis • Microsoft Office • Project Administration • Customer Service • Report Writing • Training & Lab Support</p>
+                </div>
+                <div class="cv-section">
+                    <h3>PROFESSIONAL EXPERIENCE</h3>
+                    <div class="cv-job">
+                        <h4>Laboratory Technician | Faculty of Computer Science & Human Development, University of Dongola (2025–2026)</h4>
+                        <ul>
+                            <li>Technical support for computer laboratories.</li>
+                            <li>Hardware and software installation and maintenance.</li>
+                            <li>Support for lecturers and students during practical sessions.</li>
+                            <li>Troubleshooting IT issues and maintaining laboratory readiness.</li>
+                        </ul>
+                    </div>
+                    <div class="cv-job">
+                        <h4>Finance Office Secretary | Kahateen Voluntary Organization (2021–2023)</h4>
+                        <ul>
+                            <li>Managed records and documentation.</li>
+                            <li>Prepared reports using Microsoft Office.</li>
+                            <li>Supported beneficiaries and office operations.</li>
+                            <li>Contributed to fundraising exceeding SDG 3,000,000.</li>
+                            <li>Maintained confidentiality and accuracy.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cv-section">
+                    <h3>EDUCATION</h3>
+                    <p><strong>Bachelor of Computer Science (Honours)</strong> – University of Dongola (Graduated: May 2025)</p>
+                </div>
+                <div class="cv-section">
+                    <h3>CERTIFICATIONS</h3>
+                    <p>• Experience Certificate – Laboratory Technician | • Experience Certificate – Kahateen Organization | • Training of Trainers (TOT) | • Social Entrepreneurship | • Creativity & Excellence | • Social Communication Skills</p>
+                </div>
+                <div class="cv-section">
+                    <h3>TECHNICAL SKILLS & LANGUAGES</h3>
+                    <p><strong>Tools & Tech:</strong> Microsoft Office, Excel, SPSS, HTML, CSS, JavaScript, PHP, MySQL, Visual Basic .NET, Microsoft Access, GitHub</p>
+                    <p><strong>Personal Skills:</strong> Leadership, Communication, Teamwork, Problem Solving, Critical Thinking, Time Management, Adaptability</p>
+                    <p><strong>Languages:</strong> Arabic (Native), English (Intermediate)</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="printCvBtn"><i class="fa-solid fa-print"></i> طباعة / حفظ PDF</button>
+                <button class="btn btn-primary" id="closeCvBtn">إغلاق</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- App JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
