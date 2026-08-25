@@ -302,6 +302,27 @@ body[dir="ltr"] {
     cursor: pointer;
 }
 
+/* Mobile Navigation Overlay */
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-fast);
+}
+
+.nav-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -942,6 +963,10 @@ body[dir="ltr"] .arrow-icon {
     gap: 1rem;
 }
 
+.cert-info {
+    flex: 1;
+}
+
 .cert-icon {
     font-size: 1.8rem;
     flex-shrink: 0;
@@ -957,6 +982,220 @@ body[dir="ltr"] .arrow-icon {
     font-size: 0.8rem;
     color: var(--text-secondary);
 }
+
+.clickable-cert {
+    cursor: pointer;
+    position: relative;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+
+.clickable-cert:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 10px 30px rgba(0, 242, 254, 0.25);
+}
+
+.cert-view-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+    font-size: 0.78rem;
+    color: var(--accent-cyan);
+    font-weight: 700;
+    background: rgba(0, 242, 254, 0.1);
+    padding: 0.25rem 0.6rem;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    transition: var(--transition-fast);
+}
+
+.clickable-cert:hover .cert-view-badge {
+    background: var(--accent-cyan);
+    color: #0a0e17;
+}
+
+.cert-modal-box {
+    max-width: 750px;
+    width: 92%;
+}
+
+.cert-modal-body {
+    text-align: center;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.cert-modal-img {
+    max-width: 100%;
+    max-height: 65vh;
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--border-color);
+    object-fit: contain;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: auto;
+}
+
+.cert-readonly-banner {
+    background: rgba(226, 183, 20, 0.12);
+    border: 1px solid rgba(226, 183, 20, 0.3);
+    color: var(--accent-gold);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cert-modal-footer-info {
+    margin-top: 1.2rem;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.cert-modal-date {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 0.3rem;
+}
+
+/* Portfolio / Featured Technical Projects Section */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.portfolio-card {
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+}
+
+.portfolio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-emerald);
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-emerald);
+    box-shadow: 0 12px 35px rgba(16, 185, 129, 0.25);
+}
+
+.portfolio-badge {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35rem 0.8rem;
+    border-radius: var(--radius-full);
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-emerald);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+body[dir="rtl"] .portfolio-badge {
+    left: auto;
+    right: 1.2rem;
+}
+
+.portfolio-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.portfolio-content h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.portfolio-content p {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+.portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-tags .tag {
+    font-size: 0.78rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.portfolio-actions {
+    margin-top: auto;
+}
+
+.btn-portfolio {
+    width: 100%;
+    justify-content: center;
+    gap: 0.5rem;
+    background: var(--gradient-emerald);
+    color: #ffffff !important;
+    font-weight: 700;
+    padding: 0.8rem 1.25rem;
+    border-radius: var(--radius-md);
+    transition: var(--transition-fast);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-portfolio:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/* Color Helper Utility Classes */
+.text-gold { color: var(--accent-gold, #e2b714) !important; }
+.text-cyan { color: var(--accent-cyan, #00f2fe) !important; }
+.text-yellow { color: #f59e0b !important; }
+.text-purple { color: var(--accent-purple, #8b5cf6) !important; }
+.text-emerald { color: var(--accent-emerald, #10b981) !important; }
+.text-blue { color: var(--accent-blue, #4facfe) !important; }
+
 
 /* Service Estimator Calculator */
 .estimator-box {

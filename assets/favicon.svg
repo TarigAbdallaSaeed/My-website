@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="#0a0e17"/>
+  <rect x="5" y="5" width="90" height="90" rx="17" fill="none" stroke="url(#grad)" stroke-width="3" opacity="0.6"/>
+  <path d="M 28 35 L 50 20 L 72 35 L 72 65 L 50 80 L 28 65 Z" fill="none" stroke="url(#grad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="50" y="58" font-family="'Outfit', 'Cairo', sans-serif" font-size="28" font-weight="bold" fill="#00f2fe" text-anchor="middle">T</text>
+</svg>
