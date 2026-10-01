@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_experience: "الخبرات",
             nav_skills: "المهارات",
             nav_services: "الخدمات",
+            nav_portfolio: "أعمالي التقنية",
             nav_certifications: "الشهادات",
             nav_estimator: "حاسبة الخدمات",
             nav_contact: "تواصل معي",
@@ -25,11 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
             hero_prefix: "متخصص في: ",
             hero_desc: "خريج علوم حاسوب (مرتبة الشرف) من جامعة دنقلا. صاحب خبرة متكاملة في الدعم الفني، إدارة المعامل البرمجية، تطوير المواقع وقواعد البيانات، الدعم المالي والإداري، وتحليل البيانات الإحصائية وتقارير SPSS.",
             btn_whatsapp: "تواصل عبر الواتساب",
-            btn_download_cv: "عرض وتنزيل السيرة الذاتية",
+            btn_download_cv: "عرض السيرة الذاتية",
+            btn_close: "إغلاق النافذة",
             h1_val: "جامعة دنقلا",
             h1_lbl: "بكالوريوس علوم الحاسوب (مرتبة الشرف)",
             h2_val: "+3,000,000 ج.س",
-            h2_lbl: "حصيلة تمويل وتبرعات كاهاتين",
+            h2_lbl: "حصيلة تمويل وتبرعات كهاتين",
             h3_val: "إدارة المعامل",
             h3_lbl: "دعم وصيانة أجهزة الكلية",
             badge_honours: "مرتبة الشرف",
@@ -42,7 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
             about_p1: "خريج طموح ومتميز من كلية علوم الحاسوب والتنمية البشرية بجامعة دنقلا بدرجة البكالوريوس مع مرتبة الشرف. أمتلك خبرة عملية متنوعة تجمع بين الصيانة الفنية ومعامل الحاسوب، إدارة المكاتب والعمليات المالية، تحليل البيانات الإحصائية والبرمجة.",
             about_p2: "أتطلع دائماً لتحقيق التميز في بيئات العمل التقنية والإدارية، وتطبيق مهاراتي في حل المشكلات، تحسين كفاءة الأنظمة، ودعم الفرق التنفيذية والأكاديمية بكل شغف ومسؤولية.",
             lbl_email: "البريد الإلكتروني",
-            lbl_phone: "الهاتف / الواتساب",
+            lbl_phone: "الهاتف (للمكالمات)",
+            lbl_whatsapp: "الواتساب (للتواصل)",
             lbl_location: "الموقع الحالي",
             val_location: "دنقلا، الولاية الشمالية، السودان",
             lbl_edu: "المؤهل الأكاديمي",
@@ -69,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             exp1_b3: "مساعدة المحاضرين والطلاب أثناء المحاضرات العملية والتطبيقات البرمجية.",
             exp1_b4: "تشخيص واستكشاف الأعطال البرمجية والشبكية وحلها بكفاءة وسرعة.",
             exp2_role: "سكرتير المكتب المالي (Finance Office Secretary)",
-            exp2_company: "منظمة كاهاتين الطوعية (Kahateen Voluntary Organization)",
+            exp2_company: "منظمة كهاتين الطوعية (Kahateen Voluntary Organization)",
             exp2_date: "2021 – 2023",
             exp2_b1: "إدارة الأرشيف والتسجيل والسجلات المالية والإدارية بمهنية ودقة تامة.",
             exp2_b2: "إعداد وتقييم التقارير الدورية باستخدام حزمة Microsoft Office.",
@@ -97,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cert1_name: "شهادة خبرة – فني معامل حاسوب",
             cert1_issuer: "جامعة دنقلا - كلية علوم الحاسوب والتنمية البشرية",
             cert2_name: "شهادة خبرة – سكرتير المكتب المالي",
-            cert2_issuer: "منظمة كاهاتين الطوعية",
+            cert2_issuer: "منظمة كهاتين الطوعية",
             cert3_name: "تدريب المدربين (TOT - Training of Trainers)",
             cert3_issuer: "تأهيل واحتراف المهارات التدريبية",
             cert4_name: "ريادة الأعمال الاجتماعية (Social Entrepreneurship)",
@@ -106,6 +109,17 @@ document.addEventListener('DOMContentLoaded', () => {
             cert5_issuer: "التفكير الابتكاري وتطوير الأداء المالي والمهني",
             cert6_name: "مهارات التواصل الاجتماعي (Social Communication Skills)",
             cert6_issuer: "التواصل الفعال وإدارة العلاقات والإقناع",
+            cert7_name: "إدارة المشاريع الاحترافية (PMP - Project Management Professional)",
+            cert7_issuer: "مركز العميد للتدريب (36 ساعة تدريبية)",
+            cert7_date: "الفترة: 8/8/2026 إلى 18/8/2026 | رقم التسجيل: 116313",
+            cert_view_btn: "قراءة الشهادة",
+            cert_readonly_text: "الشهادة متاحة للقراءة والمعاينة فقط",
+            port_subtitle: "المشاريع والمنصات",
+            port_title: "أعمالي التقنية والمشاريع المنجزة",
+            kahateen_badge: "منصة حية ومباشرة",
+            kahateen_title: "تصميم منصة منظمة كهاتين لكفالة الأيتام",
+            kahateen_desc: "تصميم وتنفيذ منصة إلكترونية متكاملة ومتجاوبة لمنظمة كهاتين لكفالة الأيتام، تهدف إلى تسهيل التبرعات، إدارة برامج كفالة الأيتام والأنشطة الخيرية بواجهة حديثة وسريعة متوافقة مع كل الشاشات والهواتف الذكية.",
+            btn_visit_platform: "زيارة منصة منظمة كهاتين (kahateen.org)",
             est_subtitle: "أداة تفاعلية",
             est_title: "حاسبة تقدير الخدمات وتجهيز الطلب",
             est_intro: "حدد الخدمات التقنية والإدارية المطلوبة للحصول على تقدير فوري ومباشر لنطاق العمل وإرساله مباشرة إلى المهندس طارق عبر الواتساب:",
@@ -121,7 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
             btn_send_estimate: "إرسال تفاصيل الطلب عبر الواتساب",
             contact_subtitle: "يسعدني تواصلكم",
             contact_title: "معلومات التواصل والاستفسارات",
-            c_wa_head: "واتساب / هاتف",
+            c_phone_head: "الهاتف (للمكالمات فقط)",
+            c_wa_head: "الواتساب (للتواصل المباشر)",
             c_email_head: "البريد الإلكتروني",
             c_loc_head: "الموقع الجغرافي",
             c_loc_val: "دنقلا، الولاية الشمالية، السودان",
@@ -144,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_experience: "Experience",
             nav_skills: "Skills",
             nav_services: "Services",
+            nav_portfolio: "Portfolio",
             nav_certifications: "Certifications",
             nav_estimator: "Estimator",
             nav_contact: "Contact",
@@ -153,7 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
             hero_prefix: "Specialized in: ",
             hero_desc: "Computer Science Honours graduate from the University of Dongola. Experienced in IT support, lab management, web & database development, financial administration, and SPSS data analysis.",
             btn_whatsapp: "WhatsApp Contact",
-            btn_download_cv: "View & Download Resume",
+            btn_download_cv: "View Resume",
+            btn_close: "Close Window",
             h1_val: "Dongola University",
             h1_lbl: "B.Sc. Computer Science (Honours)",
             h2_val: "+SDG 3,000,000",
@@ -170,7 +187,8 @@ document.addEventListener('DOMContentLoaded', () => {
             about_p1: "Highly motivated Computer Science graduate with honours from the University of Dongola. Experienced in IT support, laboratory support, web development, administration, finance support, data analysis, report writing, customer service and project coordination.",
             about_p2: "Striving for excellence in tech and administrative environments, applying problem-solving skills to enhance system efficiency and support executive and academic teams with dedication.",
             lbl_email: "Email Address",
-            lbl_phone: "Phone / WhatsApp",
+            lbl_phone: "Phone (Calls Only)",
+            lbl_whatsapp: "WhatsApp (Direct Contact)",
             lbl_location: "Location",
             val_location: "Dongola, Northern State, Sudan",
             lbl_edu: "Education",
@@ -234,6 +252,17 @@ document.addEventListener('DOMContentLoaded', () => {
             cert5_issuer: "Innovation & Professional Excellence",
             cert6_name: "Social Communication Skills",
             cert6_issuer: "Effective Communication & Interpersonal Skills",
+            cert7_name: "Project Management Professional (PMP)",
+            cert7_issuer: "Alameed Training Center (36 Training Hours)",
+            cert7_date: "Period: 8/8/2026 to 18/8/2026 | Reg No: 116313",
+            cert_view_btn: "Read Certificate",
+            cert_readonly_text: "Certificate is available for read-only view",
+            port_subtitle: "Featured Projects",
+            port_title: "Technical Projects & Portfolio",
+            kahateen_badge: "Live Production Platform",
+            kahateen_title: "Kahateen Orphan Sponsorship Platform Design",
+            kahateen_desc: "Comprehensive and fully responsive platform designed and implemented for Kahateen Voluntary Organization for Orphan Sponsorship. Facilitates donations, sponsorship management, and community campaigns with modern UX across mobile and desktop devices.",
+            btn_visit_platform: "Visit Official Platform (kahateen.org)",
             est_subtitle: "Interactive Tool",
             est_title: "Service Scope & Inquiry Estimator",
             est_intro: "Select your required technical/administrative services to generate an instant scope request and send directly to Eng. Tarig via WhatsApp:",
@@ -249,7 +278,8 @@ document.addEventListener('DOMContentLoaded', () => {
             btn_send_estimate: "Send Service Request via WhatsApp",
             contact_subtitle: "Get In Touch",
             contact_title: "Contact Information & Inquiries",
-            c_wa_head: "WhatsApp / Phone",
+            c_phone_head: "Phone (Calls Only)",
+            c_wa_head: "WhatsApp (Direct Contact)",
             c_email_head: "Email Address",
             c_loc_head: "Location",
             c_loc_val: "Dongola, Northern State, Sudan",
@@ -286,6 +316,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update Dynamic Typing Array according to active language
         restartTypingEffect();
+
+        // Update WhatsApp Links dynamically
+        updateWhatsappLinks(lang);
+    }
+
+    function updateWhatsappLinks(lang) {
+        // Hero WhatsApp Button Link
+        const heroWaBtn = document.querySelector('.hero-actions .btn-primary');
+        if (heroWaBtn) {
+            const heroText = lang === 'ar'
+                ? 'مرحباً بالباشمهندس طارق، أرغب في التواصل معك بخصوص مشروع جديد'
+                : 'Hello Eng. Tarig Saeed, I would like to get in touch regarding a new project';
+            heroWaBtn.href = `https://wa.me/249998896609?text=${encodeURIComponent(heroText)}`;
+        }
+
+        // Service cards WhatsApp links
+        const serviceLinks = document.querySelectorAll('.service-link');
+        const serviceTexts = {
+            ar: [
+                'أرغب في طلب خدمة الدعم الفني وتقنية المعلومات',
+                'أرغب في طلب خدمة تطوير موقع أو قاعدة بيانات',
+                'أرغب في طلب خدمة تحليل البيانات وإعداد التقارير',
+                'أرغب في طلب خدمة الدعم الإداري وإدارة المشاريع'
+            ],
+            en: [
+                'I would like to request IT Support & System Maintenance service',
+                'I would like to request Web & Database Development service',
+                'I would like to request Data Analysis & SPSS Reporting service',
+                'I would like to request Admin & Project Support service'
+            ]
+        };
+
+        serviceLinks.forEach((link, idx) => {
+            const msgList = serviceTexts[lang] || serviceTexts.ar;
+            if (msgList[idx]) {
+                link.href = `https://wa.me/249998896609?text=${encodeURIComponent(msgList[idx])}`;
+            }
+        });
     }
 
     // Initialize Language Toggle
@@ -318,17 +386,30 @@ document.addEventListener('DOMContentLoaded', () => {
         applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
     });
 
-    // Mobile Navigation Toggle
+    // Mobile Navigation Toggle & Backdrop
     const mobileToggleBtn = document.getElementById('mobileToggle');
     const navMenu = document.getElementById('navMenu');
+    const navOverlay = document.getElementById('navOverlay');
 
-    mobileToggleBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
+    function closeMobileMenu() {
+        if (navMenu) navMenu.classList.remove('active');
+        if (navOverlay) navOverlay.classList.remove('active');
+    }
+
+    if (mobileToggleBtn) {
+        mobileToggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            if (navOverlay) navOverlay.classList.toggle('active');
+        });
+    }
+
+    if (navOverlay) {
+        navOverlay.addEventListener('click', closeMobileMenu);
+    }
 
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
+            closeMobileMenu();
             document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
             link.classList.add('active');
         });
@@ -434,7 +515,7 @@ document.addEventListener('DOMContentLoaded', () => {
             : 'Hello Eng. Tarig Saeed, I would like to request the following services:';
         
         const textMsg = encodeURIComponent(`${greeting}\n\n- ` + selected.join('\n- '));
-        window.open(`https://wa.me/249124966030?text=${textMsg}`, '_blank');
+        window.open(`https://wa.me/249998896609?text=${textMsg}`, '_blank');
     });
 
     // Contact Form Handler
@@ -449,7 +530,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = document.getElementById('msgContent').value;
 
         const fullMsg = `الاسم: ${name}\nوسيلة التواصل: ${contact}\nالموضوع: ${subject}\nالتفاصيل: ${message}`;
-        const waUrl = `https://wa.me/249124966030?text=${encodeURIComponent(fullMsg)}`;
+        const waUrl = `https://wa.me/249998896609?text=${encodeURIComponent(fullMsg)}`;
 
         formFeedback.style.color = '#10b981';
         formFeedback.textContent = currentLang === 'ar'
@@ -463,12 +544,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     });
 
-    // Resume Modal Handler
+    // Resume Modal Handler (Read-Only)
     const cvModal = document.getElementById('cvModal');
     const downloadCvBtn = document.getElementById('downloadCvBtn');
     const closeCvModalBtn = document.getElementById('closeCvModal');
     const closeCvBtn = document.getElementById('closeCvBtn');
-    const printCvBtn = document.getElementById('printCvBtn');
 
     function openCvModal() {
         cvModal.classList.add('active');
@@ -480,44 +560,62 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'auto';
     }
 
-    downloadCvBtn.addEventListener('click', openCvModal);
-    closeCvModalBtn.addEventListener('click', closeCvModal);
-    closeCvBtn.addEventListener('click', closeCvModal);
+    if (downloadCvBtn) downloadCvBtn.addEventListener('click', openCvModal);
+    if (closeCvModalBtn) closeCvModalBtn.addEventListener('click', closeCvModal);
+    if (closeCvBtn) closeCvBtn.addEventListener('click', closeCvModal);
 
-    cvModal.addEventListener('click', (e) => {
-        if (e.target === cvModal) closeCvModal();
+    if (cvModal) {
+        cvModal.addEventListener('click', (e) => {
+            if (e.target === cvModal) closeCvModal();
+        });
+    }
+
+    // Certificate Read-Only Image Modal Handler
+    const certImageModal = document.getElementById('certImageModal');
+    const closeCertModalBtn = document.getElementById('closeCertModal');
+    const closeCertBtn = document.getElementById('closeCertBtn');
+    const clickableCerts = document.querySelectorAll('.clickable-cert');
+
+    function openCertModal(imgSrc, title, issuer, date) {
+        if (!certImageModal) return;
+        const certModalImg = document.getElementById('certModalImg');
+        const certModalTitle = document.getElementById('certModalTitle');
+        const certModalIssuer = document.getElementById('certModalIssuer');
+        const certModalDate = document.getElementById('certModalDate');
+
+        if (certModalImg && imgSrc) certModalImg.src = imgSrc;
+        if (certModalTitle && title) certModalTitle.textContent = title;
+        if (certModalIssuer && issuer) certModalIssuer.textContent = issuer;
+        if (certModalDate && date) certModalDate.textContent = date;
+
+        certImageModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal() {
+        if (!certImageModal) return;
+        certImageModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    clickableCerts.forEach(card => {
+        card.addEventListener('click', () => {
+            const imgSrc = card.getAttribute('data-cert-img');
+            const title = currentLang === 'ar' ? card.getAttribute('data-cert-title-ar') : card.getAttribute('data-cert-title-en');
+            const issuer = currentLang === 'ar' ? card.getAttribute('data-cert-issuer-ar') : card.getAttribute('data-cert-issuer-en');
+            const date = currentLang === 'ar' ? card.getAttribute('data-cert-date-ar') : card.getAttribute('data-cert-date-en');
+            
+            openCertModal(imgSrc, title, issuer, date);
+        });
     });
 
-    printCvBtn.addEventListener('click', () => {
-        const content = document.getElementById('cvPrintContent').innerHTML;
-        const printWindow = window.open('', '', 'height=800,width=900');
-        printWindow.document.write(`
-            <html>
-                <head>
-                    <title>TARIG ABDALLA SAEED - CV</title>
-                    <style>
-                        body { font-family: Arial, sans-serif; padding: 2rem; color: #111; line-height: 1.6; }
-                        h2 { text-align: center; margin-bottom: 5px; color: #000; }
-                        .cv-sub { text-align: center; font-weight: bold; color: #1d4ed8; margin-bottom: 5px; }
-                        .cv-contact-line { text-align: center; font-size: 0.9rem; color: #555; }
-                        hr { margin: 15px 0; border: none; border-top: 1px solid #ccc; }
-                        h3 { border-bottom: 2px solid #1d4ed8; padding-bottom: 3px; color: #1e40af; margin-top: 20px; }
-                        ul { margin-left: 20px; }
-                        li { margin-bottom: 4px; }
-                    </style>
-                </head>
-                <body>
-                    ${content}
-                </body>
-            </html>
-        `);
-        printWindow.document.close();
-        printWindow.focus();
-        setTimeout(() => {
-            printWindow.print();
-            printWindow.close();
-        }, 500);
-    });
+    if (closeCertModalBtn) closeCertModalBtn.addEventListener('click', closeCertModal);
+    if (closeCertBtn) closeCertBtn.addEventListener('click', closeCertModal);
+    if (certImageModal) {
+        certImageModal.addEventListener('click', (e) => {
+            if (e.target === certImageModal) closeCertModal();
+        });
+    }
 
     // Run Initial Setup
     applyLanguage(currentLang);
